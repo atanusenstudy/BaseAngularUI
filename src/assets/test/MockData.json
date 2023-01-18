@@ -1,0 +1,42 @@
+{
+    "User":{
+        "admin":[
+            {
+                "userId": 1,
+                "name":{
+                    "firstName": "Atanu",
+                    "middleName": "Test",
+                    "lastName": "Sen"
+                },
+                "userName":"atanusen",
+                "password":"adminTest"
+            },{
+                "userId": 2,
+                "name":{
+                    "firstName": "Test",
+                    "middleName": "",
+                    "lastName": "User"
+                },
+                "userName":"test123",
+                "password":"test123"
+            }
+        ],
+        "endUser":[
+            {
+                "userId": 3,
+                "name":{
+                    "firstName": "Atanu",
+                    "middleName": "",
+                    "lastName": "Sen"
+                },
+                "userName":"atanusen",
+                "password":"adminSen"
+            }
+        ]
+    },
+    "SiteData": {
+        "item1":[
+            
+        ]
+    }
+}

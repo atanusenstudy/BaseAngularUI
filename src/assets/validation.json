@@ -1,0 +1,14 @@
+{
+    "common": {
+
+    },
+    "login":{
+        "userName":{
+            "required":"This field is required"
+        },"password":{
+            "required":"This field is required",
+            "pattern": "Nust have 1 uppercase, 1 lowercase and one number",
+            "minlength": "Password should be atlease 8 character long"
+        }
+    }
+}
