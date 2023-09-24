@@ -1,6 +1,6 @@
 export const environment = {
     production: false,
-    serverUrl:'',
+    serverUrl:"https://localhost:7194/",
     anyCostants: ''
   };
   
