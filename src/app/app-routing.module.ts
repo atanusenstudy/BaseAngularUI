@@ -8,7 +8,9 @@ const routes: Routes = [
     
   ]},
 
-  {path:'Home',component:HomeComponent}
+  {path : 'Home',component:HomeComponent},
+  {path : 'Contact',loadChildren: () => import('./contact/contact.module').then(m => m.ContactModule)},
+  {path : 'User', loadChildren: () => import('./user/user.module').then(m => m.UserModule)}
 ];
 
 @NgModule({

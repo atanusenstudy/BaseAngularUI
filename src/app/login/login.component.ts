@@ -31,6 +31,10 @@ export class LoginComponent implements OnInit {
     } );
     return modelData;
   }
+  directNavigate(){
+    this.router.navigate(["/Home"])
+  }
+
   login(){
     console.clear()
     console.log("Login");
@@ -39,6 +43,8 @@ export class LoginComponent implements OnInit {
     
     var s = this.Loginservice.login(modelData).subscribe(resp => {
       console.log(JSON.stringify(resp));
+      sessionStorage.setItem("User",JSON.stringify(resp));
+
       this.router.navigate(["/Home"])
     });
 
