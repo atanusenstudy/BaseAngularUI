@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  serverUrl:'https://localhost:7289/api/',
+  serverUrl:'https://localhost:7289/api/',//'https://atanubasicservice.azurewebsites.net/api/',//'https://localhost:7289/api/',
   anyCostants: ''
 };
 
