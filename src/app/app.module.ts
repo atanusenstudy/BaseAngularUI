@@ -9,12 +9,14 @@ import { Service } from './common/service/login.service';
 import { HttpClientModule } from '@angular/common/http';
 import { HomeComponent } from './home/home.component';
 import { TestComponent } from './test/test.component';
+import { CapitalizePipe } from './common/pipes/capitalize.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     HomeComponent,
+    CapitalizePipe,
     TestComponent
   ],
   imports: [
