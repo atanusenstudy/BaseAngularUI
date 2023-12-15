@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { UntypedFormControl, UntypedFormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { login } from '../common/model/commomModel';
 import { Service } from '../common/service/login.service';
@@ -10,9 +10,9 @@ import { Service } from '../common/service/login.service';
 })
 export class LoginComponent implements OnInit {
 
-  LoginForm:FormGroup = new FormGroup({
-    Email: new FormControl('', [Validators.required]),
-    Password: new FormControl('', [Validators.required])
+  LoginForm:UntypedFormGroup = new UntypedFormGroup({
+    Email: new UntypedFormControl('', [Validators.required]),
+    Password: new UntypedFormControl('', [Validators.required])
   });
 
   constructor(private Loginservice : Service, private router: Router) { 
